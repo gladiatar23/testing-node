@@ -4,7 +4,10 @@ const cmd = require('./cmd');
 describe('The pizza CLI', () => {
     it('should print the correct error', async () => {
         try {
-            await cmd.execute('node ../silverboltai-test-engineer-code-task-d3a40e01e814/index.js', ['-g', 10, '-o', 'c:/42']);
+          const b =   await cmd.create('node ../silverboltai-test-engineer-code-task-d3a40e01e814/index.js', ['-g', 10, '-o', 'c:/42'])
+          debugger;
+         const c = b.execute();
+          debugger;
         } catch(err) {
             console.log(err.message);
             expect(err.trim()).to.equal(
