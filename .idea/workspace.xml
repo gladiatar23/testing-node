@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9d75288-cd41-4ae1-9de2-9cd53c8c41f6" name="Default Changelist" comment="" />
+    <list default="true" id="c9d75288-cd41-4ae1-9de2-9cd53c8c41f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,37 +82,39 @@
     <session id="-1588034575">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="493" />
-          <entry key="json" value="14" />
+          <entry key="js" value="519" />
+          <entry key="json" value="15" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="14" />
-          <entry key="JavaScript" value="493" />
+          <entry key="JSON" value="15" />
+          <entry key="JavaScript" value="519" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="10" />
+          <entry key="js" value="11" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="10" />
+          <entry key="JavaScript" value="11" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -116,49 +122,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/mocha/lib/runnable.js">
+        <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="288" column="20" selection-start-line="288" selection-start-column="20" selection-end-line="288" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmd.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="56" column="61" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="61" />
+            <state relative-caret-position="457">
+              <caret line="96" selection-start-line="25" selection-end-line="96" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consoleWatch.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -170,13 +157,17 @@
       <find>execute</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/consoleWatch.txt" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/cmd.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -195,11 +186,12 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="483" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="3233" />
+    <option name="height" value="1733" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
@@ -256,7 +248,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Mocha.The pizza CLI">
+    <configuration name="test" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="The pizza CLI" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -265,15 +267,20 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/index.js</test-file>
+      <test-file>$PROJECT_DIR$/test.js</test-file>
       <test-names>
         <name value="The pizza CLI" />
       </test-names>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Mocha.The pizza CLI" />
+      <item itemvalue="npm.test" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Mocha.The pizza CLI" />
+        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -296,16 +303,13 @@
       <workItem from="1539156256536" duration="670000" />
       <workItem from="1539157599276" duration="3088000" />
       <workItem from="1539174422607" duration="5633000" />
+      <workItem from="1539239449514" duration="2669000" />
+      <workItem from="1539251852688" duration="635000" />
+      <workItem from="1539278934181" duration="954000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="The_pizza_CLI - 2018.10.10 at 10h 17m 38s.xml">
-      <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="The_pizza_CLI - 2018.10.10 at 11h 51m 06s.xml">
-      <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="The_pizza_CLI - 2018.10.10 at 15h 29m 43s.xml">
       <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -318,27 +322,46 @@
     <history-entry file="The_pizza_CLI - 2018.10.10 at 17h 39m 39s.xml">
       <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="The_pizza_CLI - 2018.10.11 at 10h 14m 37s.xml">
+      <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="The_pizza_CLI - 2018.10.11 at 10h 22m 10s.xml">
+      <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="The_pizza_CLI - 2018.10.11 at 10h 24m 24s.xml">
+      <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="The_pizza_CLI - 2018.10.11 at 10h 25m 27s.xml">
+      <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="The_pizza_CLI - 2018.10.11 at 10h 26m 15s.xml">
+      <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="The_pizza_CLI - 2018.10.11 at 11h 43m 01s.xml">
+      <configuration name="The pizza CLI" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71252000" />
+    <option name="totallyTimeSpent" value="75606000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="483" y="-1088" width="1936" height="1056" extended-state="6" />
+    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1189968" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12307692" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32925472" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.19153675" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44155845" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -358,7 +381,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/index.js</url>
           <line>7</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -399,20 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consoleWatch.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mocha/mocha.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -420,17 +428,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.js" />
     <entry file="file://$PROJECT_DIR$/cmd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="56" column="61" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="61" />
+        <state relative-caret-position="219">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/consoleWatch.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="457">
+          <caret line="96" selection-start-line="25" selection-end-line="96" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
