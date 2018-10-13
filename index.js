@@ -50,9 +50,9 @@ let cpW = spawn('node', ['../silverboltai-test-engineer-code-task-d3a40e01e814/i
 
     });
 }
-let listOfObj = [];
+let listOfObj = {};
 function toObj(arr){
-    let singleObj ={};
+    let singleObj =[];
     // const category = [arr];
     //
     // category.map(function (arr) {
