@@ -1,3 +1,2 @@
 generate
-Watching the following path "c:/42"
 #12 files were generated under c:/42
