@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9d75288-cd41-4ae1-9de2-9cd53c8c41f6" name="Default Changelist" comment="" />
+    <list default="true" id="c9d75288-cd41-4ae1-9de2-9cd53c8c41f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +94,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="3023" />
+          <entry key="js" value="3358" />
           <entry key="json" value="14" />
           <entry key="txt" value="14" />
         </counts>
@@ -99,20 +102,20 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="14" />
-          <entry key="JavaScript" value="3023" />
+          <entry key="JavaScript" value="3358" />
           <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="11" />
+          <entry key="js" value="12" />
           <entry key="ts" value="3" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="11" />
+          <entry key="JavaScript" value="12" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="TypeScript" value="3" />
         </counts>
@@ -133,15 +136,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+            <state relative-caret-position="187">
+              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+              <folding>
+                <element signature="e#2790#2816#0" />
+                <element signature="e#3735#3737#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consoleWatch.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="8" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -184,10 +195,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-14" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="3233" />
+    <option name="height" value="1733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -202,6 +213,24 @@
             <path>
               <item name="testing node" type="b2602c69:ProjectViewProjectNode" />
               <item name="testing node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing node" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testing node" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing node" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testing node" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="os-utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing node" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testing node" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="os-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,7 +307,7 @@
       <workItem from="1539280458665" duration="848000" />
       <workItem from="1539339879417" duration="119000" />
       <workItem from="1539340048109" duration="46650000" />
-      <workItem from="1539499084076" duration="3086000" />
+      <workItem from="1539499084076" duration="12541000" />
     </task>
     <servers />
   </component>
@@ -315,12 +344,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121960000" />
+    <option name="totallyTimeSpent" value="131415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-14" width="1936" height="1056" extended-state="6" />
+    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.084754795" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12874494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -333,7 +363,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49959514" visible="true" weight="0.3403782" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49959514" visible="true" weight="0.2504638" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50040483" side_tool="true" weight="0.3469388" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -358,13 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="140" column="16" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/os-utils/lib/osutils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
         </state>
       </provider>
     </entry>
@@ -417,13 +440,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/os-utils/lib/osutils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/consoleWatch.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+        <state relative-caret-position="187">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+          <folding>
+            <element signature="e#2790#2816#0" />
+            <element signature="e#3735#3737#0" />
+          </folding>
         </state>
       </provider>
     </entry>
