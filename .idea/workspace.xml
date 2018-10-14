@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9d75288-cd41-4ae1-9de2-9cd53c8c41f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd.js" beforeDir="false" afterPath="$PROJECT_DIR$/cmd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="c9d75288-cd41-4ae1-9de2-9cd53c8c41f6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +183,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1928" />
     <option name="y" value="-14" />
     <option name="width" value="1936" />
@@ -282,7 +278,7 @@
       <workItem from="1539280458665" duration="848000" />
       <workItem from="1539339879417" duration="119000" />
       <workItem from="1539340048109" duration="46650000" />
-      <workItem from="1539499084076" duration="2959000" />
+      <workItem from="1539499084076" duration="3086000" />
     </task>
     <servers />
   </component>
@@ -319,11 +315,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121833000" />
+    <option name="totallyTimeSpent" value="121960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-14" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-1928" y="-14" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.084754795" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
