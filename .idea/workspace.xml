@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c9d75288-cd41-4ae1-9de2-9cd53c8c41f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consoleWatch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/consoleWatch.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jsonfile/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsonfile/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jsonfile/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsonfile/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jsonfile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsonfile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jsonfile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsonfile/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/upath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/upath/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd.js" beforeDir="false" afterPath="$PROJECT_DIR$/cmd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,13 +88,14 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2504" />
+          <entry key="js" value="3023" />
           <entry key="json" value="14" />
           <entry key="txt" value="14" />
         </counts>
@@ -109,20 +103,20 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="14" />
-          <entry key="JavaScript" value="2504" />
+          <entry key="JavaScript" value="3023" />
           <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="10" />
+          <entry key="js" value="11" />
           <entry key="ts" value="3" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="10" />
+          <entry key="JavaScript" value="11" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="TypeScript" value="3" />
         </counts>
@@ -143,26 +137,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="3419" column="7" selection-start-line="3419" selection-start-column="7" selection-end-line="3419" selection-end-column="7" />
+            <state relative-caret-position="357">
+              <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -190,9 +166,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cmd.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/consoleWatch.txt" />
+        <option value="$PROJECT_DIR$/cmd.js" />
         <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
@@ -211,9 +187,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="483" />
-    <option name="y" value="-1088" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-1928" />
+    <option name="y" value="-14" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -224,7 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,11 +211,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/silverboltai-test-engineer-code-task-d3a40e01e814" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/ht-selenium" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -305,7 +281,8 @@
       <workItem from="1539174422607" duration="5633000" />
       <workItem from="1539280458665" duration="848000" />
       <workItem from="1539339879417" duration="119000" />
-      <workItem from="1539340048109" duration="40738000" />
+      <workItem from="1539340048109" duration="46650000" />
+      <workItem from="1539499084076" duration="2959000" />
     </task>
     <servers />
   </component>
@@ -342,13 +319,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112962000" />
+    <option name="totallyTimeSpent" value="121833000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="483" y="-1088" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-14" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08422175" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.084754795" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -419,8 +396,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="56" column="61" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="61" />
+        <state relative-caret-position="256">
+          <caret line="41" column="56" lean-forward="true" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="3893" column="13" selection-start-line="3893" selection-start-column="13" selection-end-line="3893" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -434,24 +425,10 @@
     <entry file="file://$PROJECT_DIR$/consoleWatch.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="3419" column="7" selection-start-line="3419" selection-start-column="7" selection-end-line="3419" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state relative-caret-position="357">
+          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
         </state>
       </provider>
     </entry>
