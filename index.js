@@ -1,5 +1,5 @@
 
-const sumFile = 12;
+const sumFile = 10;
 const Path = require('path');
 const util = require('util');
 const os=require('os-utils');
@@ -20,7 +20,8 @@ gTest= ()=>{
     setTimeout(function() {
         // console.table(listOfObj,['a','b','c']);
         console.log('Test end');
-       console.log(JSON.stringify(listOfObj));
+        console.log(counter);
+       //console.log(JSON.stringify(listOfObj));
     }, 109000);
 
 };
@@ -30,9 +31,10 @@ wTest =()=>{
 let cpW = spawn('node', ['../silverboltai-test-engineer-code-task-d3a40e01e814/index.js', '-w', 'c:/42'], {stdout: [consoleWatch, consoleWatch, result]});
     cpW.stdout.on('data', function(data) {
         os.cpuUsage(function(cpuUsage){
-            console.log(`${Date.now()},${Math.round(cpuUsage * 100)/100},${Math.round (memoryUsed * 100)/100}`);
-           spliter(data.toString(),cpuUsage) ;
-            //spliter(cpuUsage,memoryUsed) ;
+            //console.log(`${Date.now()},${Math.round(cpuUsage * 100)/100},${Math.round (memoryUsed * 100)/100}`);
+            data+=(cpuUsage.toString()+','+memoryUsed.toString());
+           spliter(data.toString()) ;
+            //spliter(cpuUsage.toString(),memoryUsed.toString()) ;
 
             // console.log(`${Date.now()} CPUusege: ${Math.round (cpuUsage * 100)/100}% MemoryUsege: ${Math.round (memoryUsed * 100)/100}mb`);
         });
@@ -43,7 +45,7 @@ let cpW = spawn('node', ['../silverboltai-test-engineer-code-task-d3a40e01e814/i
     cpW.kill();
 }, 100000);
 }
-
+let counter=0;
 
 let listOfObj = [];
 function toObj(arr){
@@ -57,6 +59,7 @@ function toObj(arr){
             singleObj.filePath = upath.normalize(arr[arr.length - 1]);
             singleObj.time = arr[0];
             singleObj.func = arr[(arr.length-1) /2];
+            singleObj.func=='ADDED'? counter ++: null;
             console.log(singleObj);
         }
         else --j;
@@ -77,6 +80,7 @@ function toObj(arr){
 }
 
 // list = toObj();
+//
 // foreach(obj in list)
 // {
 //     action = obj.func;
@@ -86,17 +90,23 @@ function toObj(arr){
 //
 //     switch (action) {
 //
-//         case "ADDED":
+//         case 'ADDED':
 //             fs.existsSync(pathToChack) ? addCounter++ : null;
-//
+//              addCounter++;
+//              doWorkTest ();
 //             break;
 //
-//         case "CHANGED":
+//         case 'CHANGED':
+//            doWorkTest ();
 //
 //             break;
-//
+// }
+//}
+// doWorkTest (pathToChack)=>
+// {
+//           switch (action) {
 //         case "DIRTY":
-//             let fileExt = Path.extname(path);
+//             let fileExt = Path.extname(pathToChack);
 //             if (fileExt === '.dirty'){
 //
 //             }
@@ -129,6 +139,8 @@ setTimeout(function() {
 
 function spliter(strout) {
     toObj(strout.split(/(::!)|(!::)/));
+    console.log(strout)
+    console.log(strout.split(/(::!)|(!::)/));
 }
 
 

@@ -1,2 +1,2 @@
 generate
-#12 files were generated under c:/42
+#10 files were generated under c:/42
