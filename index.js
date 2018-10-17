@@ -22,7 +22,7 @@ gTest= ()=>{
         console.log('Test end');
         console.log(counter);
        //console.log(JSON.stringify(listOfObj));
-    }, 109000);
+    }, 10900);
 
 };
 
@@ -31,9 +31,10 @@ wTest =()=>{
 let cpW = spawn('node', ['../silverboltai-test-engineer-code-task-d3a40e01e814/index.js', '-w', 'c:/42'], {stdout: [consoleWatch, consoleWatch, result]});
     cpW.stdout.on('data', function(data) {
         os.cpuUsage(function(cpuUsage){
+            let processed = [];
             //console.log(`${Date.now()},${Math.round(cpuUsage * 100)/100},${Math.round (memoryUsed * 100)/100}`);
             data+=(cpuUsage.toString()+','+memoryUsed.toString());
-           spliter(data.toString()) ;
+        debugger;   processed = spliter(data.toString()) ;
             //spliter(cpuUsage.toString(),memoryUsed.toString()) ;
 
             // console.log(`${Date.now()} CPUusege: ${Math.round (cpuUsage * 100)/100}% MemoryUsege: ${Math.round (memoryUsed * 100)/100}mb`);
@@ -43,41 +44,41 @@ let cpW = spawn('node', ['../silverboltai-test-engineer-code-task-d3a40e01e814/i
     setTimeout(function() {
     console.log('End of the Watcher');
     cpW.kill();
-}, 100000);
+}, 10000);
 }
 let counter=0;
 
 let listOfObj = [];
 function toObj(arr){
 
-    let singleObj = {};
+    let singleObj = {};debugger
     for (let i = 0, j=0; i < arr.length ; ++i, j++)
-        if ( (arr[i] !== undefined) && (arr[i] !== '::!') && (arr[i] !== '!::') ){
-            singleObj.startTime ;
-            singleObj.cpuProc;
-            singleObj.memoryProc;
-            singleObj.filePath = upath.normalize(arr[arr.length - 1]);
-            singleObj.time = arr[0];
-            singleObj.func = arr[(arr.length-1) /2];
-            singleObj.func=='ADDED'? counter ++: null;
+        singleObj.time = arr[0];
+    singleObj.func = arr[1];
+    singleObj.filePath = upath.normalize(arr[2]);
+            singleObj.cpuProc=arr[3];
+            singleObj.memoryProc=arr[4];
+
+
+            singleObj.func=='ADDED' && counter ++;
             console.log(singleObj);
-        }
-        else --j;
+
     console.log(singleObj);
+    arr = [];
     return listOfObj.push(singleObj);
-    // const category = [arr];
-    //
-    // category.map(function (arr) {
-    //     singleObj['filePath'] =upath.normalize(arr[arr.length - 1]);
-    //     singleObj['time'] = arr[0];
-    //     singleObj['func'] = arr[(arr.length-1) /2];
-    //     console.log(singleObj);
-    //
-    //     return listOfObj+=singleObj;
-    //
-    // })
+
 
 }
+
+let arrtObjSum = [];
+let objCompare = {};
+
+objCompare.time;
+objCompare.result;
+
+
+
+let addCounter = 0;
 
 // list = toObj();
 //
@@ -86,7 +87,7 @@ function toObj(arr){
 //     action = obj.func;
 //     time = obj.time;
 //     pathToChack = obj.filePath;
-// let addCounter = 0;
+//
 //
 //     switch (action) {
 //
@@ -137,10 +138,11 @@ setTimeout(function() {
 }, 190);
 
 
-function spliter(strout) {
-    toObj(strout.split(/(::!)|(!::)/));
-    console.log(strout)
-    console.log(strout.split(/(::!)|(!::)/));
+function spliter(strout) {debugger;
+    toObj(strout.split(/(?:::!)|(?:!::)|(?:,)|(?:\n)/));
+    //console.log(strout)
+    console.log(strout.split(/(?:::!)|(?:!::)|(?:,)|(?:\n)/));
+    return null;
 }
 
 
