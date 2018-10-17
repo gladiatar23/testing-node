@@ -1,2 +1,1 @@
-generate
 #10 files were generated under c:/42
