@@ -3,6 +3,7 @@ const Path = require('path');
 const os = require('os-utils');
 const memoryUsed = process.memoryUsage().heapUsed / 1024 / 1024 ;
 let spawn = require('child_process').spawn;
+let spawnSync = require('child_process').spawnSync;
 const fs = require('fs');
 const upath = require('upath');
 fs.unlinkSync("./consoleWatch.txt");
@@ -14,7 +15,7 @@ let times = 0;
 
 
 gTest = () => {
-     spawn('node', ['../silverboltai-test-engineer-code-task-d3a40e01e814/index.js',
+     spawnSync('node', ['../silverboltai-test-engineer-code-task-d3a40e01e814/index.js',
             '-g', sumFile,
             '-o', 'c:/42'],
         {stdio: [consoleWatch, consoleWatch, consoleWatch]});
@@ -26,13 +27,13 @@ gTest = () => {
             if (obj.func === 'ADDED' || obj.func === 'CHANGED') {
                 return obj;
             }
-        });
+        })
         testingTheApp(focusObj);
         // console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXX' + clean);
         // console.log('YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY' + dirty);
 
         // console.log(JSON.stringify(checkObj, null , 4)+'\n');
-        console.log(listOfObj);
+       // console.log(listOfObj);
 
     }, 10900);
 
@@ -41,12 +42,21 @@ gTest = () => {
 let result = {};
 wTest = () => {
     let cpW = spawn('node', ['../silverboltai-test-engineer-code-task-d3a40e01e814/index.js', '-w', 'c:/42'], {stdout: [consoleWatch, consoleWatch, result]});
+    let recordTest = {};
+    let ignoreFirstLine = false;
     cpW.stdout.on('data', function (data) {
-        os.cpuUsage(function (cpuUsage) {
-            data += (cpuUsage + ',' + memoryUsed);
-            let processed = [spliter(data.toString())];
+counter++;
+        if(ignoreFirstLine){
 
-        });
+
+            os.cpuUsage(function (cpuUsage) {
+                recordTest.rowData = data.toString();
+                recordTest.cpu = cpuUsage;
+                recordTest.memory = memoryUsed;
+                spliter(recordTest);
+            });
+        }
+        ignoreFirstLine = true;
     });
 
     setTimeout(function () {
@@ -59,18 +69,20 @@ let counter = 0;
 
 let listOfObj = [];
 
-function toObj(arr) {
+function toObj(splited, cpu , memnory) {debugger;
 
     let singleObj = {};
-    for (let i = 0; i < arr.length; ++i)
-        singleObj.time = arr[0];
-    singleObj.func = arr[1];
-    singleObj.fileName = upath.normalize(arr[2]);
-    singleObj.extn = arr[3];
-    singleObj.cpuProc = arr[4];
-    singleObj.memoryProc = arr[5];
+    // for (let i = 0; i < splited.length; ++i){
+    //
+    // }
+    singleObj.time = splited[0];
+    singleObj.func = splited[1];
+    singleObj.fileName = upath.normalize(splited[2]);
+    singleObj.extn = splited[3];
+    singleObj.cpuProc = cpu;
+    singleObj.memoryProc = memnory;
 
-    singleObj.func === 'ADDED' && counter++;
+    singleObj.func === 'ADDED' ;
 
     return listOfObj.push(singleObj);
 
@@ -84,15 +96,17 @@ setTimeout(function () {
 }, 190);
 
 
-function spliter(strout) {
-    console.log(strout);
-    // toObj(strout.split(/(?:::!)|(?:!::)|(?:,)|(clean$)/));
-    toObj(strout.split(/(?:\.)|(?:::!)|(?:!::)|(?:,)|(?:\n)/));
-    return null;
+function spliter(recoredData) {
+    // console.log(recoredData);
+    console.log('Row data splited: ', recoredData.rowData.split(/(?:\.)|(?:::!)|(?:!::)|(?:\n)/));
+
+    toObj(recoredData.rowData.split(/(?:\.)|(?:::!)|(?:!::)|(?:\n)/) , recoredData.cpu , recoredData.memory);
+    
+    return true;
 }
 
 
-function filterValue(find) {
+function filterValue(find) {debugger;
     let a = listOfObj.filter((object) => {
         if ((object.func === 'REMOVED' || object.func === 'CLEAN' || object.func === 'ERROR') && object.fileName === find)
                 return true;
@@ -104,15 +118,19 @@ function filterValue(find) {
 
 
 function testingTheApp(obj) {
+    let key;
+    // for (key in obj) {
+    Object.keys(obj).map((key,index) => {
 
-    for (let i = 0; obj.length > i; i++) {
-        let test = (Path.join(`${obj[i].fileName}.${obj[i].extn}`));
-        if (obj[i].extn === 'clean') {
+        let val = obj[index];
+        let test = (Path.join(`${val.fileName}.${val.extn}`));
+       // console.log('Key: ' , val);
+        if (val.extn === 'clean') {
             fs.stat(test, function (err) {
                 if (err !== null) {
-                    printReportFail(obj,i);
+                    printReportFail(val);
                 } else {
-                    printReportPass(obj,i);
+                    printReportPass(val);
                     clean++;
                 }
             });
@@ -120,39 +138,42 @@ function testingTheApp(obj) {
         else {
             fs.stat(test, function (err) {
                 if (err !== null) {
-                    printReportPass(obj,i);
+                    printReportPass(val);
                     dirty++;
                 } else {
-                    printReportFail(obj,i);
+                    printReportFail(val);
                 }
             });
         }
 
-    }
+    })
 
 }
 
 let arrTime= [];
-function printReportPass(obj,i) {
-    calcul = filterValue(obj[i].fileName);
+function printReportPass(obj) {
+    let calcul;
+    calcul = filterValue(obj.fileName);
     calcul = calcul.length ? calcul[0] : {};
-    times = Time(calcul.time, (obj[i].time));
-    // console.log(`pass ${obj[i].fileName}.${obj[i].extn} \nmemory: ${obj[i].memoryProc}mb \nCPU: ${obj[i].cpuProc} \nTime: ${times}`);
+    times = Time(calcul.time, (obj.time));
+    console.log(`pass ${obj.fileName}.${obj.extn} \nmemory: ${obj.memoryProc}mb \nCPU: ${obj.cpuProc} \nTime: ${times}`);
 }
-function printReportFail(obj,i) {
-    calcul = filterValue(obj[i].fileName);
+function printReportFail(obj) {
+    let calcul;
+    calcul = filterValue(obj.fileName);
     calcul = calcul.length ? calcul[0] : {};
-    times = Time(calcul.time, (obj[i].time));
-    // console.log(`pass ${obj[i].fileName}.${obj[i].extn} \nmemory: ${obj[i].memoryProc}mb \nCPU: ${obj[i].cpuProc} \nTime: ${times}`);
+    times = Time(calcul.time, (obj.time));
+    console.log(`pass ${obj.fileName}.${obj.extn} \nmemory: ${obj.memoryProc}mb \nCPU: ${obj.cpuProc} \nTime: ${times}`);
 }
 
-function Time(end, start) {
+function Time(end, start) {debugger
     // console.log(end);
     // console.log(start);
-    times = parseInt(end) - parseInt(start)
+    times = end - start;
    arrTime.push(times);
 
     // console.log(`array of time ${arrTime}`);
+    console.log(`array of time ${counter}`);
 
 return times;
 }
